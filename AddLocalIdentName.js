@@ -66,8 +66,8 @@ const AddLocalIdentName = (lessPath, lessText, isModule) =>
         if (!isModule) {
           return className;
         }
-        return getLocalIdentName(lessPath) + className;
-      },
+        return getLocalIdentName(className, lessPath);
+      }
     }),
   ])
     .process(lessText, {
