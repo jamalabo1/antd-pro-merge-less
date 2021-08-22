@@ -67,7 +67,7 @@ const AddLocalIdentName = (lessPath, lessText, isModule) =>
           return className;
         }
         return getLocalIdentName(className, lessPath);
-      }
+      },
     }),
   ])
     .process(lessText, {
