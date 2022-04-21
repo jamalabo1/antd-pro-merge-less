@@ -243,6 +243,7 @@ const renderLess = async (
         modifyVars: myModifyVars,
         javascriptEnabled: true,
         filename: path.resolve(proLess),
+        slient: true
       })
       // 如果需要压缩，再打开压缩功能默认打开
       .then(out => (min ? uglifycss.processString(out.css) : out.css))
