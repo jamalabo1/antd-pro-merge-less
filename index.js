@@ -248,7 +248,7 @@ const renderLess = async (
       // 如果需要压缩，再打开压缩功能默认打开
       .then(out => (min ? uglifycss.processString(out.css) : out.css))
       .catch(e => {
-        console.log(e);
+        //console.log(e);
       })
   );
 };
@@ -300,7 +300,7 @@ const build = async (
     await loop(0);
     console.log('🎩 less render end!');
   } catch (error) {
-    console.log(error);
+   // console.log(error);
   }
 };
 
