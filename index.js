@@ -287,7 +287,7 @@ const build = async (
         // 写入缓存的变量值设置
         fs.writeFileSync(modifyVarsArrayPath, JSON.stringify(modifyVars));
       } catch (error) {
-        console.log(error);
+       // console.log(error);
       }
       if (index < modifyVarsArray.length) {
         await loop(index + 1);
